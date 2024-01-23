@@ -24,6 +24,11 @@ body{
 .interface img.logo{
     margin-top: 30px;
     width: 10vh;
+
+}
+
+.btn-menu-open{
+    display: none;
 }
 
 .flex{
@@ -100,7 +105,7 @@ header a{
     transition: all .2s;
 }
 
-header a:hover{
+header nav.desktop-menu a:hover{
     color: #fff;
     transform: scale(1.05);
 }
@@ -109,9 +114,75 @@ header nav ul{
     list-style-type: none;
 }
 
-header nav ul li{
+header nav.desktop-menu ul li{
     display: inline-block;
     padding: 0 40px;
+}
+
+/* MOBILE MENU STYLE */
+
+.btn-menu-open i{
+    display: block;
+    color: #7ED957;
+    font-size: 40px;
+}
+
+.mobile-menu{
+    background-color: #000000F6;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 4;
+    width: 0%;
+    overflow: hidden;
+    transition: .5s;
+}
+
+.mobile-menu.menu-open{
+    width: 70%;
+}
+
+.mobile-menu.menu-open ~ .overlay-menu{
+    display: block;
+}
+
+.mobile-menu .btn-menu-close{
+    padding: 20px 5%;
+}
+
+.mobile-menu .btn-menu-close i{
+    color: #7ED957;
+    font-size: 30px
+}
+
+.mobile-menu nav ul{
+    text-align: right;
+}
+
+.mobile-menu nav ul li a{
+    color: #fff;
+    font-size: 20px;
+    font-weight: 300;
+    padding: 20px 8%;
+    display: block; 
+}
+
+.mobile-menu nav ul li a:hover{
+    background-color: #7ED957;
+    color: #000;
+    font-weight: 400;
+}
+
+.overlay-menu{
+    background-color: #000000A7;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 3;
+    display: none;
 }
 
 /* SITE TOP STYLE */
@@ -218,7 +289,7 @@ section.about-me .flex{
 
 .about-me .txt-about h2 span{
     color: #7ED957;
-    display: block;
+    display: inline-block;
 }
 
 .about-me .txt-about p{
@@ -332,4 +403,126 @@ footer .line-footer p a{
     color: #fff;
     text-decoration: none;
 
+}
+
+
+
+@media screen and (max-width: 1200px){
+
+    /* MAIN CLASSES */
+
+    .btn-menu-open{
+        display: block;
+    }
+
+    .flex{
+        flex-direction: column;
+    }
+
+    .site-top .flex{
+        flex-direction: column-reverse;
+    }
+
+    .interface img.logo{
+        width: 13vh;
+    }
+
+    /* HEADER */
+    .desktop-menu, .btn-contact{
+        display: none;
+    }
+
+    h2.title{
+        font-size: 25px;
+        text-align: center;
+    }
+
+    .txt-site-top p, .expertises-box, .txt-about{
+        text-align: justify;
+    }
+
+    .expertises-box h3{
+        text-align: center;
+    }
+
+    .expertises-box i{
+        display: flex;
+        justify-content: center;
+    }
+
+    /* SITE TOP */
+
+    section.site-top{
+        gap: 40px;
+    }
+
+    section.site-top{
+        padding-top: 20px 8%;
+    }
+
+    .site-top h1{
+        font-size: 30px;
+    }
+
+    .site-top .img-site-top img{
+        margin-left: 10%;
+        width: 80%;
+    }
+
+    /* MY EXPERTISES */
+
+    section.expertises{
+        padding: 20px 8%;
+    }
+
+    .expertises .expertises-box h3{
+        font-size: 20px;
+    }
+
+    /* ABOUT ME */
+
+    section.about-me{
+        padding: 80px 8%;
+    }
+
+    .img-about img{
+        width: 100%;
+    }
+
+    .about-me .txt-about h2{
+        font-size: 31px;
+        line-height: 35px;
+    }
+
+    .btn-social{
+        text-align: center;
+    }
+
+    /* PORTFOLIO */
+
+    section.portfolio{
+        padding: 80px 8%;
+    }
+
+    .img-port{
+        width: 100%;
+        max-width: 360px;
+        margin: 0 auto;
+    }
+
+    section.portfolio .flex{
+        gap: 60px;
+    }
+
+    /* FOOTER */
+
+    footer .flex{
+        flex-direction: column;
+        gap: 20px;
+        color: #7ED957;
+    }
+
+    footer .line-footer{
+        text-align: center;
+    }
 }

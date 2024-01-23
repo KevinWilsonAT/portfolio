@@ -17,7 +17,7 @@ body{
 }
 
 .interface{
-    max-width: 1280px;
+    max-width: 1300px;
     margin: 0 auto;
 }
 
@@ -54,6 +54,21 @@ button:hover{
     background-color: #7ED957;
     box-shadow: 0px 0px 8px #7ed957a6;
     transform: scale(1.05);
+}
+
+.blink{
+    animation: blink .5s infinite alternate;
+}
+
+@keyframes blink {
+    0%{
+        color: #7ED957;
+    }
+    100%{
+        color: #000;
+    }
+
+    }
 }
 
 /* HEADER STYLE */
@@ -213,3 +228,57 @@ section.about-me .flex{
     transition: .2s;
 }
 
+/* PORTFOLIO STYLE */
+
+section.portfolio{
+    padding: 80px 4%;
+    box-shadow: 0 0 40px 10px #70707025;
+}
+
+section.portfolio h2.title{
+    display: flex;
+    justify-content: center;
+}
+
+section.portfolio .flex{
+    margin-top: 60px;
+    justify-content: space-around;
+}
+
+.img-port{
+    width: 360px;
+    height: 460px;
+    background-size: cover;
+    background-position: 100% 0%;
+    transition: 8s;
+    cursor: pointer;
+    border-radius: 40px;
+    position: relative;
+}
+
+.img-port:hover{
+    background-position: 100% 100%;
+}
+
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000000B8;
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    font-weight: 600;
+    color: #fff;
+    text-align: center;
+    opacity: 1;
+    transition: .5s;
+}
+
+.overlay:hover{
+    opacity: 0;
+}

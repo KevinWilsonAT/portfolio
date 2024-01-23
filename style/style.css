@@ -67,8 +67,18 @@ button:hover{
     100%{
         color: #000;
     }
+}
 
-    }
+.btn-social button{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: none;
+    background-color: #7ED957;
+    font-size: 30px;
+    cursor: pointer;
+    margin: 0 5px;
+    transition: .2s;
 }
 
 /* HEADER STYLE */
@@ -216,18 +226,6 @@ section.about-me .flex{
     text-align: justify;
 }
 
-.about-me .txt-about .btn-social button{
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-    border: none;
-    background-color: #7ED957;
-    font-size: 30px;
-    cursor: pointer;
-    margin: 0 5px;
-    transition: .2s;
-}
-
 /* PORTFOLIO STYLE */
 
 section.portfolio{
@@ -256,8 +254,25 @@ section.portfolio .flex{
     position: relative;
 }
 
+.l-page{
+    width: 100%;
+    margin-top: 40%;
+}
+
+.img-port video{
+    display: flex;
+    margin-top: 35%;
+    width: 100%;
+}
+
+.img-port .overlay i{
+    font-size: 50px;
+    display: flex;
+}
+
 .img-port:hover{
     background-position: 100% 100%;
+    box-shadow: 0 0 8px #7ED957;
 }
 
 .overlay{
@@ -281,4 +296,40 @@ section.portfolio .flex{
 
 .overlay:hover{
     opacity: 0;
+    box-shadow: 0 0 8px #7ED957;
+}
+
+/* FOOTER STYLE */
+
+footer{
+    padding: 40px 4%;
+    box-shadow: 0 0 40px 10px #70707025;
+}
+
+footer .logo-footer img{
+    width: 10vh;
+}
+
+footer .flex{
+    justify-content: space-between;
+}
+
+footer .line-footer{
+    padding: 20px 0;
+}
+
+.border{
+    border-top: 2px solid #7ED957;
+}
+
+footer .line-footer p i{
+    color: #7ED957;
+    font-size: 22px;
+}
+
+footer .line-footer p a{
+    padding-left: 10px;
+    color: #fff;
+    text-decoration: none;
+
 }

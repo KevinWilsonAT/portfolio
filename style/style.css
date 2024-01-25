@@ -53,6 +53,25 @@ img.logo:hover{
     transition: .2s;
 }
 
+.btn-social button{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: none;
+    background-color: #7ED957;
+    font-size: 30px;
+    cursor: pointer;
+    margin: 0 5px;
+    transition: .2s;
+}
+
+.btn-social button.cv{
+    width: 400px;
+    font-size: 18px;
+    border-radius: 30px;
+    float: right;
+}
+
 h2.title{
     color: #fff;
     font-size: 38px;
@@ -311,6 +330,10 @@ section.expertises{
     margin: 15px 0;
 }
 
+.expertises-box p{
+    text-align: center;
+}
+
 /* ABOUT ME STYLE */
 
 section.about-me{
@@ -342,8 +365,15 @@ section.about-me .flex{
 }
 
 .about-me .txt-about p{
+    font-size: 20px;
     margin: 20px 0;
     text-align: justify;
+}
+
+.about-me .txt-about p a{
+    color: #7ED957;
+    text-decoration: none;
+    font-weight: 500;
 }
 
 /* PORTFOLIO STYLE */

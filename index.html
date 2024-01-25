@@ -9,24 +9,24 @@
     <!--Bootstrap icons-->
     <title>Kevin Wilson - Portfólio</title>
 </head>
-<body>
+<body onload="typeWriter()">
     <header>
-        <div class="interface">
-            <a href="#">
+        <div class="interface" id="home">
+            <a href="" onclick="topFunction()">
                 <img class="logo" src="img/logo.png" alt="Logo Tech Eira">
             </a><!--logo-->
 
             <nav class="desktop-menu">
                 <ul>
-                    <li><a href="#">Início</a></li>
-                    <li><a href="#">Especialidades</a></li>
-                    <li><a href="#">Sobre Mim</a></li>
-                    <li><a href="#">Meus Projetos</a></li>
+                    <li><a href="#home">Início</a></li>
+                    <li><a href="#expertises">Especialidades</a></li>
+                    <li><a href="#about-me">Sobre Mim</a></li>
+                    <li><a href="#portfolio">Meus Projetos</a></li>
                 </ul>
             </nav>
 
             <div class="btn-contact">
-                <a href="#">
+                <a href="https://api.whatsapp.com/send?phone=5535997570012&text=Olá%20Kevin,%20estou%20%20entrando%20em%20contato%20com%20você%20para%20saber%20mais%20sobre%20seus%20trabalhos%20e%20projetos." target="_blank">
                     <button>Contato</button>
                 </a>
             </div><!--btn-contact-->
@@ -40,11 +40,11 @@
 
                 <nav>
                     <ul>
-                        <li><a href="#">Início</a></li>
-                        <li><a href="#">Especialidades</a></li>
-                        <li><a href="#">Sobre Mim</a></li>
-                        <li><a href="#">Meus Projetos</a></li>
-                        <li><a href="#">Contato</a></li>
+                        <li><a href="#home">Início</a></li>
+                        <li><a href="#expertises">Especialidades</a></li>
+                        <li><a href="#about-me">Sobre Mim</a></li>
+                        <li><a href="#portfolio">Meus Projetos</a></li>
+                        <li><a href="https://api.whatsapp.com/send?phone=5535997570012&text=Olá%20Kevin,%20estou%20%20entrando%20em%20contato%20com%20você%20para%20saber%20mais%20sobre%20seus%20trabalhos%20e%20projetos." target="_blank">Contato</a></li>
                     </ul>
                 </nav>
             </div><!--mobile-menu-->
@@ -53,16 +53,17 @@
     </header>
 
     <main>
+        <button onclick="topFunction()" class="scrollTopBtn" id="scrollTopBtn"><i class="bi bi-caret-up-square"></i></button>
         <section class="site-top">
             <div class="interface">
                 <div class="flex">
                     <div class="txt-site-top">
-                        <h1>TRANSFORMANDO IDEIAS EM REALIDADE DIGITAL. <span class="blink">_</span></h1>
+                        <h1 id="slogan"></h1><span class="blink">_</span>
                         <p>Criatividade e inovação andam lado a lado. Com uma combinação única de design impactante, funcionalidade intuitiva e otimização para resultados, estou pronto para criar a presença online dos seus sonhos.</p>
 
                         <div class="btn-contact">
-                            <a href="#">
-                                <button>Entre em Contato</button>
+                            <a href="https://api.whatsapp.com/send?phone=5535997570012&text=Olá%20Kevin,%20estou%20%20entrando%20em%20contato%20com%20você%20para%20saber%20mais%20sobre%20seus%20trabalhos%20e%20projetos." target="_blank">
+                                 <button>Entre em Contato</button>
                             </a>
                         </div>
                     </div><!--txt-site-top-->
@@ -73,7 +74,7 @@
                 </div><!--flex-->
             </div><!--interface-->
         </section><!--site top-->
-        <section class="expertises">
+        <section class="expertises" id="expertises">
             <div class="interface">
                 <h2 class="title">MINHAS <span>ESPECIALIDADES.</span> <span class="blink">_</span></h2>
                 <div class="flex">
@@ -105,7 +106,7 @@
                 </div><!--flex-->
             </div><!--interface-->
         </section>
-        <section class="about-me">
+        <section class="about-me" id="about-me">
             <div class="interface">
                 <div class="flex">
                     <div class="img-about">
@@ -117,15 +118,15 @@
                         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequatur animi error est nemo unde, adipisci iste architecto maxime dicta. Ducimus nesciunt nemo quia labore saepe laudantium at itaque facere similique.Incidunt velit magni odio laboriosam obcaecati consequatur reprehenderit, ipsum labore a in quisquam veritatis saepe minima, harum perspiciatis, amet voluptate ipsa omnis.</p>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit totam iste sequi fugit consequuntur explicabo, corporis animi neque illum nisi dolore voluptatem libero, asperiores labore provident hic quis amet perferendis! Beatae non nostrum eveniet perspiciatis commodi facere libero, facilis deserunt sit asperiores ipsa eaque ducimus voluptate nesciunt recusandae fugit! Labore, magnam iure.</p>
                         <div class="btn-social">
-                            <a href="#"><button><i class="bi bi-linkedin"></i></button></a>
-                            <a href="#"><button><i class="bi bi-instagram"></i></button></a>
-                            <a href="#"><button><i class="bi bi-github"></i></button></a>
+                            <a href="https://www.linkedin.com/in/kwat1/" target="_blank"><button><i class="bi bi-linkedin"></i></button></a>
+                            <!--<a href="#"><button><i class="bi bi-instagram"></i></button></a>-->
+                            <a href="https://github.com/KevinWilsonAT" target="_blank"><button><i class="bi bi-github"></i></button></a>
                         </div><!--btn-social-->
                     </div><!--txt-about-->
                 </div><!--flex-->
             </div><!--interface-->
         </section><!--about-->
-        <section class="portfolio">
+        <section class="portfolio" id="portfolio">
             <div class="interface">
                 <h2 class="title">MEU <span>PORTFOLIO.</span> <span class="blink">_</span></h2>
                 <div class="flex">
@@ -148,12 +149,12 @@
             <div class="line-footer">
                 <div class="flex">
                     <div class="logo-footer">
-                        <img src="img/logo.png" alt="Logo Tech Eira">
+                        <a href="#home"><img class="logo" src="img/logo.png" alt="Logo Tech Eira"></a>
                     </div><!--logo-footer-->
                     <div class="btn-social">
-                        <a href="#"><button><i class="bi bi-linkedin"></i></button></a>
-                        <a href="#"><button><i class="bi bi-instagram"></i></button></a>
-                        <a href="#"><button><i class="bi bi-github"></i></button></a>
+                        <a href="https://www.linkedin.com/in/kwat1/" target="_blank"><button><i class="bi bi-linkedin"></i></button></a>
+                        <!--<a href="#"><button><i class="bi bi-instagram"></i></button></a>-->
+                        <a href="https://github.com/KevinWilsonAT" target="_blank"><button><i class="bi bi-github"></i></button></a>
                     </div><!--btn-social-->
                 </div><!--flex-->
             </div><!--line-footer-->

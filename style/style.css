@@ -310,7 +310,7 @@ section.site-top .flex{
 
 .shadow
 {
-    position: fixed;
+    position: absolute;
     right: 22vh;
     top: 77vh;
     width: 300px;

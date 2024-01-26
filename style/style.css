@@ -2,6 +2,10 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+
+
+/* =========================================================================================== */
+
 /* MAIN STYLE */
 
 *{
@@ -112,6 +116,8 @@ button:hover{
     transition: .2s;
 }
 
+/* =========================================================================================== */
+
 /* SCROLL TO THE TOP BUTTON */
 
 #scrollTopBtn {
@@ -150,6 +156,8 @@ button:hover{
     }
 }
 
+/* =========================================================================================== */
+
 /* HEADER STYLE */
 
 header{
@@ -182,6 +190,8 @@ header nav.desktop-menu ul li{
     display: inline-block;
     padding: 0 40px;
 }
+
+/* =========================================================================================== */
 
 /* MOBILE MENU STYLE */
 
@@ -250,6 +260,8 @@ header nav.desktop-menu ul li{
     display: none;
 }
 
+/* =========================================================================================== */
+
 /* SITE TOP STYLE */
 
 section.site-top{
@@ -282,7 +294,7 @@ section.site-top .flex{
 
 .site-top .img-site-top img{
     position: relative;
-    animation: float 1.5s ease-in-out infinite alternate;
+    animation: float 2s ease-in-out infinite alternate;
 }
 
 @keyframes float{
@@ -292,9 +304,35 @@ section.site-top .flex{
     }
     100%{
         top: 30px;
-        transform: rotateY(20deg);
+        transform: rotateY(40deg);
     }
 }
+
+.shadow
+{
+    position: fixed;
+    right: 22vh;
+    top: 77vh;
+    width: 300px;
+    height: 15px;
+    transform: translate(-50%,100%);
+    background: rgba(255,255,255,.05);
+    border-radius: 50%;
+    z-index: 5;
+    filter: blur(3px);
+    animation: shadow 2s ease-in-out infinite alternate;
+}
+@keyframes shadow
+{
+    0%{
+        transform:  translate(-50%,100%) scale(1);
+    }
+    100%{
+        transform:  translate(-50%,100%) scale(0.5);
+    }
+}
+
+/* =========================================================================================== */
 
 /* EXPERTISES STYLE */
 
@@ -316,23 +354,44 @@ section.expertises{
 }
 
 .expertises .expertises-box:hover{
-    transform: scale(1.05);
-    box-shadow: 0 0 8px #7ED957;
+    box-shadow: 0 0 8px #57d987;
+}
+
+.expertises .expertises-box img{
+    transition: all .5s ease-in-out;
+}
+
+.expertises .expertises-box img:hover{
+    transform: scale(1.12);
 }
 
 .expertises .expertises-box i{
     font-size: 70px;
     color: #7ED957;
+    display: flex;
+    justify-content: center;
 }
 
 .expertises .expertises-box h3{
     font-size: 28px;
     margin: 15px 0;
-}
-
-.expertises-box p{
     text-align: center;
 }
+
+.expertises-box .expertises-box-text{
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+.hl{
+    color: #57d987;
+}
+
+.expertises-box{
+    width: 100%;
+}
+
+/* =========================================================================================== */
 
 /* ABOUT ME STYLE */
 
@@ -365,16 +424,18 @@ section.about-me .flex{
 }
 
 .about-me .txt-about p{
-    font-size: 20px;
+    font-size: 19px;
     margin: 20px 0;
     text-align: justify;
 }
 
 .about-me .txt-about p a{
-    color: #7ED957;
+    color: #B4D957;
     text-decoration: none;
     font-weight: 500;
 }
+
+/* =========================================================================================== */
 
 /* PORTFOLIO STYLE */
 
@@ -449,6 +510,8 @@ section.portfolio .flex{
     box-shadow: 0 0 8px #7ED957;
 }
 
+/* =========================================================================================== */
+
 /* FOOTER STYLE */
 
 footer{
@@ -484,6 +547,8 @@ footer .line-footer p a{
 
 }
 
+/* =========================================================================================== */
+
 @media screen and (max-width: 1200px){
 
     /* MAIN CLASSES */
@@ -504,7 +569,6 @@ footer .line-footer p a{
         width: 13vh;
     }
 
-    /* HEADER */
     .desktop-menu, .btn-contact{
         display: none;
     }
@@ -527,8 +591,6 @@ footer .line-footer p a{
         justify-content: center;
     }
 
-    /* SITE TOP */
-
     section.site-top{
         gap: 40px;
     }
@@ -546,8 +608,6 @@ footer .line-footer p a{
         width: 80%;
     }
 
-    /* MY EXPERTISES */
-
     section.expertises{
         padding: 20px 8%;
     }
@@ -555,8 +615,6 @@ footer .line-footer p a{
     .expertises .expertises-box h3{
         font-size: 20px;
     }
-
-    /* ABOUT ME */
 
     section.about-me{
         padding: 80px 8%;
@@ -575,8 +633,6 @@ footer .line-footer p a{
         text-align: center;
     }
 
-    /* PORTFOLIO */
-
     section.portfolio{
         padding: 80px 8%;
     }
@@ -590,8 +646,6 @@ footer .line-footer p a{
     section.portfolio .flex{
         gap: 60px;
     }
-
-    /* FOOTER */
 
     footer .flex{
         flex-direction: column;

@@ -470,9 +470,9 @@ section.portfolio .flex{
     margin-top: 40%;
 }
 
-.img-port video{
+.img-port-video{
     display: flex;
-    margin-top: 35%;
+    padding-top: 35%;
     width: 100%;
 }
 

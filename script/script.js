@@ -44,7 +44,6 @@ menuItems.forEach(item => {
 	item.addEventListener('click', scrollToIdOnClick);
 });
 
-// Caso deseje suporte a browsers antigos / que não suportam scroll smooth nativo
 /**
  * Smooth scroll animation
  * @param {int} endX: destination x coordinate
@@ -76,7 +75,6 @@ function smoothScrollTo(endX, endY, duration) {
     window.scroll(newX, newY);
   }, 1000 / 60); // 60 fps
 };
-
 
 // SMOOTH SCROLL TO THE TOP
 

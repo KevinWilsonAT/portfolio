@@ -463,11 +463,6 @@ section.portfolio .flex{
     position: relative;
 }
 
-.l-page{
-    width: 100%;
-    margin-top: 40%;
-}
-
 .img-port-video{
     display: flex;
     padding-top: 35%;

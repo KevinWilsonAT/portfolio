@@ -1,0 +1,108 @@
+@media screen and (max-width: 1200px){
+
+    /* MAIN CLASSES */
+
+    .btn-menu-open{
+        display: block;
+    }
+
+    .flex{
+        flex-direction: column;
+    }
+
+    .site-top .flex{
+        flex-direction: column-reverse;
+    }
+
+    .interface img.logo{
+        width: 13vh;
+    }
+
+    .desktop-menu, .btn-contact{
+        display: none;
+    }
+
+    h2.title{
+        font-size: 25px;
+        text-align: center;
+    }
+
+    .txt-site-top p, .expertises-box, .txt-about{
+        text-align: justify;
+    }
+
+    .expertises-box h3{
+        text-align: center;
+    }
+
+    .expertises-box i{
+        display: flex;
+        justify-content: center;
+    }
+
+    section.site-top{
+        gap: 40px;
+    }
+
+    section.site-top{
+        padding-top: 20px 8%;
+    }
+
+    .site-top h1{
+        font-size: 30px;
+    }
+
+    .site-top .img-site-top img{
+        margin-left: 10%;
+        width: 80%;
+    }
+
+    section.expertises{
+        padding: 20px 8%;
+    }
+
+    .expertises .expertises-box h3{
+        font-size: 20px;
+    }
+
+    section.about-me{
+        padding: 80px 8%;
+    }
+
+    .img-about img{
+        width: 100%;
+    }
+
+    .about-me .txt-about h2{
+        font-size: 31px;
+        line-height: 35px;
+    }
+
+    .btn-social{
+        text-align: center;
+    }
+
+    section.portfolio{
+        padding: 80px 8%;
+    }
+
+    .img-port{
+        width: 100%;
+        max-width: 360px;
+        margin: 0 auto;
+    }
+
+    section.portfolio .flex{
+        gap: 60px;
+    }
+
+    footer .flex{
+        flex-direction: column;
+        gap: 20px;
+        color: #7ED957;
+    }
+
+    footer .line-footer{
+        text-align: center;
+    }
+}

@@ -2,8 +2,6 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-
-
 /* =========================================================================================== */
 
 /* MAIN STYLE */
@@ -473,76 +471,6 @@ section.about-me .flex{
     color: #B4D957;
     text-decoration: none;
     font-weight: 500;
-}
-
-/* =========================================================================================== */
-
-/* PORTFOLIO STYLE */
-
-section.portfolio{
-    padding: 80px 4%;
-    box-shadow: 0 0 40px 10px #70707025;
-}
-
-section.portfolio h2.title{
-    display: flex;
-    justify-content: center;
-}
-
-section.portfolio .flex{
-    margin-top: 60px;
-    justify-content: space-around;
-}
-
-.img-port{
-    width: 360px;
-    height: 460px;
-    background-size: cover;
-    background-position: 100% 0%;
-    transition: 5s;
-    cursor: pointer;
-    border-radius: 40px;
-    position: relative;
-}
-
-.img-port-video{
-    display: flex;
-    padding-top: 35%;
-    width: 100%;
-}
-
-.img-port .overlay i{
-    font-size: 50px;
-    display: flex;
-}
-
-.img-port:hover{
-    background-position: 100% 100%;
-    box-shadow: 0 0 8px #7ED957;
-}
-
-.overlay{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: #000000B8;
-    border-radius: 40px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 24px;
-    font-weight: 600;
-    color: #fff;
-    text-align: center;
-    opacity: 1;
-    transition: .5s;
-}
-
-.overlay:hover{
-    opacity: 0;
-    box-shadow: 0 0 8px #7ED957;
 }
 
 /* =========================================================================================== */

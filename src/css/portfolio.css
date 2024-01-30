@@ -1,0 +1,141 @@
+/* =========================================================================================== */
+
+/* PORTFOLIO STYLE */
+
+section.portfolio{
+    padding: 80px 4%;
+    box-shadow: 0 0 40px 10px #70707025;
+}
+
+section.portfolio h2.title{
+    display: flex;
+    justify-content: center;
+}
+
+section.portfolio .flex{
+    margin-top: 60px;
+    justify-content: space-around;
+}
+
+.img-port{
+    width: 360px;
+    height: 460px;
+    background-size: cover;
+    background-position: 100% 0%;
+    transition: 5s;
+    cursor: pointer;
+    border-radius: 40px;
+    position: relative;
+}
+
+.img-port-video{
+    display: flex;
+    padding-top: 35%;
+    width: 100%;
+}
+
+.img-port .overlay i{
+    font-size: 50px;
+    display: flex;
+}
+
+.img-port:hover{
+    background-position: 100% 100%;
+    box-shadow: 0 0 8px #7ED957;
+}
+
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000000B8;
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    font-weight: 600;
+    color: #fff;
+    text-align: center;
+    opacity: 1;
+    transition: .5s;
+}
+
+.overlay:hover{
+    opacity: 0;
+    box-shadow: 0 0 8px #7ED957;
+}
+
+.img-port img{
+    z-index: 99;
+    position: relative;
+    top: 90%;
+    left: 40%;
+    width: 30px;
+    border-radius: 50%;
+    transition: all 1s;
+}
+
+.img-port img:hover{
+    transform: scale(3);
+}
+
+#portfolio-filter{
+    display: flex;
+    margin-top: 50px;
+    justify-content: space-evenly;
+}
+
+.container {
+    overflow: hidden;
+}
+  
+.filterDiv {
+    float: left;
+    color: #ffffff;
+    text-align: center;
+    margin: 2px;
+    display: none;
+}
+  
+.show {
+    display: block;
+}
+
+/*
+CORES PARA O PORTFOLIO
+
+#7ED957 - PRINCIPAL
+#B4D957
+#57D963
+#D9D457
+#57D98F
+
+*/
+
+.project {
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    text-transform: uppercase;
+    border: none;
+    outline: none;
+    padding: 12px 16px;
+    color: #ffffff;
+    background-color: transparent;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+  
+.project:hover {
+    background-color: #57D98F;
+    color: #000000;
+    box-shadow: 0 0 8px #7ED957;
+}
+  
+.project.active {
+    background-color: #7ED957;
+    color: white;
+}

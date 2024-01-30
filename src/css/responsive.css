@@ -106,3 +106,43 @@
         text-align: center;
     }
 }
+
+/* TAB FILTERS */
+
+@media screen and (max-width: 1024px){   
+    
+    #portfolio-filter{
+        flex-direction: row;
+        width: 100%;
+    }
+
+    .project{
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 768px){   
+    
+    #portfolio-filter{
+        flex-direction: column;
+        width: 110%;
+        margin-left: -9.6%;
+    }
+        
+    .project {
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 425px){   
+    
+    #portfolio-filter{
+        flex-direction: column;
+        width: 100%;
+        margin-left: -7%;
+    }
+    
+    .portfolio-filter .project{
+        border-radius: 0px 25px 25px 0;
+    }
+}

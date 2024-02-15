@@ -2,6 +2,16 @@
 
     /* MAIN CLASSES */
 
+    .parallax{
+        background-image: linear-gradient(-80deg, #000 53%, #202020 100%);
+        
+    }
+    
+    .parallax-reverse{
+        background-image: linear-gradient(265deg, #000 53%, #202020 100%);
+        
+    }
+
     .btn-menu-open{
         display: block;
     }
@@ -104,6 +114,36 @@
 
     footer .line-footer{
         text-align: center;
+    }
+}
+
+@media screen and (max-width: 1024px){
+    .parallax{
+        background-image: linear-gradient(-80deg, #000 53%, #202020 100%);   
+    }
+    
+    .parallax-reverse{
+        background-image: linear-gradient(265deg, #000 53%, #202020 100%);
+    }
+}
+
+@media screen and (max-width: 768px){
+    .parallax{
+        background-image: linear-gradient(-84deg, #000 53%, #202020 100%);   
+    }
+    
+    .parallax-reverse{
+        background-image: linear-gradient(267deg, #000 53%, #202020 100%);
+    }
+}
+
+@media screen and (max-width: 425px){
+    .parallax{
+        background-image: linear-gradient(-87deg, #000 53%, #202020 100%);   
+    }
+    
+    .parallax-reverse{
+        background-image: linear-gradient(268.5deg, #000 53%, #202020 100%);
     }
 }
 

@@ -1,400 +1,407 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Muito prazer, sou Kevin Teixeira e esse é o meu Portfólio">
-    <link rel="stylesheet" href="./src/css/style.css">
-    <link rel="stylesheet" href="./src/css/portfolio.css">
-    <link rel="stylesheet" href="./src/css/responsive.css">
-    <link rel="shortcut icon" href="./src/img/icon.png" type="image/x-icon">    
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    <!--Bootstrap icons-->
-    <title>Kevin Wilson - Portfólio</title>
-</head>
-<body onload="typeWriter()">
-    <header>
-        <div class="interface" id="home">
-            <a href="" onclick="topFunction()">
-                <img class="logo" src="./src/img/logo.png" alt="Logo Tech Eira">
-            </a><!--logo-->
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Muito prazer, sou Kevin Teixeira e esse é o meu Portfólio">
+        <link rel="stylesheet" href="./src/css/style.css">
+        <link rel="stylesheet" href="./src/css/portfolio.css">
+        <link rel="stylesheet" href="./src/css/responsive.css">
+        <link rel="shortcut icon" href="./src/img/icon.png" type="image/x-icon">    
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"> <!--Bootstrap icons-->
+        <title>Kevin Wilson - Portfólio</title>
+    </head>
+    <body onload="typeWriter()">
+        <div class="parallax">
+            <header>
+                <div class="interface" id="home">
+                    <a href="" onclick="topFunction()">
+                        <img class="logo" src="./src/img/logo.png" alt="Logo Tech Eira">
+                    </a><!--logo-->
 
-            <nav class="desktop-menu">
-                <ul>
-                    <li><a href="#home">Início</a></li>
-                    <li><a href="#expertises">Especialidades</a></li>
-                    <li><a href="#about-me">Sobre Mim</a></li>
-                    <li><a href="#portfolio">Meus Projetos</a></li>
-                </ul>
-            </nav>
+                    <nav class="desktop-menu">
+                        <ul>
+                            <li><a href="#home">Início</a></li>
+                            <li><a href="#expertises">Especialidades</a></li>
+                            <li><a href="#about-me">Sobre Mim</a></li>
+                            <li><a href="#portfolio">Meus Projetos</a></li>
+                        </ul>
+                    </nav>
 
-            <div class="btn-contact">
-                <a href="https://api.whatsapp.com/send?phone=5535997570012&text=Olá%20Kevin,%20estou%20%20entrando%20em%20contato%20com%20você%20para%20saber%20mais%20sobre%20seus%20trabalhos%20e%20projetos." target="_blank">
-                    <button>Contato</button>
-                </a>
-            </div><!--btn-contact-->
+                    <div class="btn-contact">
+                        <a href="https://api.whatsapp.com/send?phone=5535997570012&text=Olá%20Kevin,%20estou%20%20entrando%20em%20contato%20com%20você%20para%20saber%20mais%20sobre%20seus%20trabalhos%20e%20projetos." target="_blank">
+                            <button>Contato</button>
+                        </a>
+                    </div><!--btn-contact-->
 
-            <div class="btn-menu-open" id="btn-menu-open">
-                <i class="bi bi-list"></i>
-            </div>
+                    <div class="btn-menu-open" id="btn-menu-open">
+                        <i class="bi bi-list"></i>
+                    </div>
 
-            <div class="mobile-menu" id="mobile-menu">
-                <div class="btn-menu-close"><i class="bi bi-x-lg"></i></div>
+                    <div class="mobile-menu" id="mobile-menu">
+                        <div class="btn-menu-close"><i class="bi bi-x-lg"></i></div>
 
-                <nav>
-                    <ul>
-                        <li><a href="#home">Início</a></li>
-                        <li><a href="#expertises">Especialidades</a></li>
-                        <li><a href="#about-me">Sobre Mim</a></li>
-                        <li><a href="#portfolio">Meus Projetos</a></li>
-                        <li><a href="https://api.whatsapp.com/send?phone=5535997570012&text=Olá%20Kevin,%20estou%20%20entrando%20em%20contato%20com%20você%20para%20saber%20mais%20sobre%20seus%20trabalhos%20e%20projetos." target="_blank">Contato</a></li>
-                    </ul>
-                </nav>
-            </div><!--mobile-menu-->
-            <div class="overlay-menu" id="overlay-menu"></div>
-        </div><!--interface-->
-    </header>
+                        <nav>
+                            <ul>
+                                <li><a href="#home">Início</a></li>
+                                <li><a href="#expertises">Especialidades</a></li>
+                                <li><a href="#about-me">Sobre Mim</a></li>
+                                <li><a href="#portfolio">Meus Projetos</a></li>
+                                <li><a href="https://api.whatsapp.com/send?phone=5535997570012&text=Olá%20Kevin,%20estou%20%20entrando%20em%20contato%20com%20você%20para%20saber%20mais%20sobre%20seus%20trabalhos%20e%20projetos." target="_blank">Contato</a></li>
+                            </ul>
+                        </nav>
+                    </div><!--mobile-menu-->
+                    <div class="overlay-menu" id="overlay-menu"></div>
+                </div><!--interface-->
+            </header>
 
-    <main>
-        <button onclick="topFunction()" class="scrollTopBtn" id="scrollTopBtn"><i class="bi bi-caret-up-square"></i></button>
-        <section class="site-top">
-            <div class="interface">
-                <div class="flex">
-                    <div class="txt-site-top">
-                        <h1 id="slogan"></h1><span class="blink">_</span>
-                        <p>Criatividade e inovação andam lado a lado. Com uma combinação única de design impactante, funcionalidade intuitiva e otimização para resultados, estou pronto para criar a presença online dos seus sonhos.</p>
-                    </div><!--txt-site-top-->
+            <main>
+                <button onclick="topFunction()" class="scrollTopBtn" id="scrollTopBtn"><i class="bi bi-caret-up-square"></i></button>
+                <section class="site-top">
+                    <div class="interface">
+                        <div class="flex">
+                            <div class="txt-site-top">
+                                <h1 id="slogan"></h1><span class="blink">_</span>
+                                <p>Criatividade e inovação andam lado a lado. Com uma combinação única de design impactante, funcionalidade intuitiva e otimização para resultados, estou pronto para criar a presença online dos seus sonhos.</p>
+                            </div><!--txt-site-top-->
 
-                    <div class="img-site-top">
-                        <img src="./src/img/me-round.png" alt="">
-                    </div><!--img-site-top-->
-                    <div class="shadow"></div>
-                </div><!--flex-->
-            </div><!--interface-->
-        </section><!--site top-->
-        <section class="expertises" id="expertises">
-            <div class="interface">
-                <h2 class="title">MINHAS <span>ESPECIALIDADES.</span> <span class="blink">_</span></h2>
-                <div class="flex">
-                    <div class="expertises-box">
-                        <i class="bi bi-code-square"></i>
-                        <h3>Desenvolvimento Web</h3>
-                        <p class="expertises-box-text">
-                            Gosto de desenvolver projetos do zero e gosto de dar vida a essas ideias no navegador.
-                        </p>
-                        <p class="expertises-box-text hl">Idiomas que falo:</p>
-                        <div class="expertises-box-text">
-                            <div class="tooltip">
-                                <img src="https://img.shields.io/badge/HTML5-239120?style=for-the-badge&logo=html5&logoColor=white" alt="HTML">
-                                <span class="tooltiptext">Experiência com HTML:<br>8/10 - Em Aprendizado</span>
-                            </div>
-                            <div class="tooltip">
-                                <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" alt="CSS3">
-                                <span class="tooltiptext">Experiência com CSS3:<br>8/10 - Em Aprendizado</span>
-                            </div>
-                            <div class="tooltip">
-                                <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" alt="JavaScript">
-                                <span class="tooltiptext">Experiência com JavaScript:<br>7/10 - Em Aprendizado</span>
-                            </div>
-                        </div>
-                        <p class="expertises-box-text hl">Aprendendo a falar:</p>
-                        <div class="expertises-box-text">
-                            <div class="tooltip">
-                                <img src="https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white" alt="">
-                                <span class="tooltiptext">Experiência com TypeScript:<br>Em Aprendizado</span>
-                            </div>
-                            <div class="tooltip">
-                                <img src="https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php&logoColor=white" alt="PHP">
-                                <span class="tooltiptext">Experiência com PHP:<br> 6/10 - Em Aprendizado</span>
-                            </div>
-                            <div class="tooltip">
-                                <img src="https://img.shields.io/badge/SQL-005C84?style=for-the-badge&logo=mysql&logoColor=white" alt="MySQL">
-                                <span class="tooltiptext">Experiência com MySQL:<br> 6/10 - Em Aprendizado</span>
-                            </div>
-                        </div>
-                        <p class="expertises-box-text hl">Aprendendo os frameworks:</p>
-                        <div class="expertises-box-text">
-
-                            <div class="tooltip">
-                                <img src="https://img.shields.io/badge/Tailwind%20CSS-06B6D4?logo=tailwindcss&logoColor=fff&style=for-the-badge" alt="Tailwind">
-                                <span class="tooltiptext">Experiência com Tailwind:<br>Em Aprendizado</span>
-                            </div>
-                            <div class="tooltip">
-                                <img src="https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white" alt="Node.js">
-                                <span class="tooltiptext">Experiência com Node.js:<br>Em Aprendizado</span>
-                            </div>
-                            <div class="tooltip">
-                                <img src="https://img.shields.io/badge/Angular-DD0031?style=for-the-badge&logo=angular&logoColor=white" alt="Angular">
-                                <span class="tooltiptext">Experiência com Angular:<br>Em Aprendizado</span>
-                            </div>
-                            <div class="tooltip">
-                                <img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" alt="React">
-                                <span class="tooltiptext">Experiência com React:<br>Em Aprendizado</span>
-                            </div>
-                            <div class="tooltip">
-                                <img src="https://img.shields.io/badge/Nest.js-171A1C?style=for-the-badge&logo=nestjs&logoColor=EB2845" alt="Nest.js">
-                                <span class="tooltiptext">Experiência com Nest.js:<br>Em Aprendizado</span>
-                            </div>
-                        </div>
-                        <p class="expertises-box-text hl">Ferramentas:</p>
-                        <div class="expertises-box-text">
-                            <div class="tooltip">
-                                <img src="https://img.shields.io/badge/WordPress-006E93?style=for-the-badge&logo=wordpress&logoColor=white" alt="WordPress">
-                                <span class="tooltiptext">Experiência com Wordpress:<br>5/10 - Em Aprendizado</span>
-                            </div>
-                            <div class="tooltip">
-                                <img src="http://img.shields.io/badge/-PHPStorm-181717?style=for-the-badge&logo=phpstorm&logoColor=white" alt="PHPStorm">
-                                <span class="tooltiptext">Experiência com PHPStorm:<br>7/10</span>
-                            </div>
-                            <div class="tooltip">
-                                <img src="https://img.shields.io/badge/GitHub-101010?style=for-the-badge&logo=github&logoColor=white" alt="GitHub">
-                                <span class="tooltiptext">Experiência com Github:<br>7/10 - Em Aprendizado</span>
-                            </div>
-                            <div class="tooltip">
-                                <img src="https://img.shields.io/badge/Visual_Studio_Code-0078D4?style=for-the-badge&logo=visual%20studio%20code&logoColor=white" alt="VS Code">
-                                <span class="tooltiptext">Experiência com VS Code:<br>8/10</span>
-                            </div>
-                            <div class="tooltip">
-                                <img src="https://img.shields.io/badge/GIT-E44C30?style=for-the-badge&logo=git&logoColor=white" alt="Git">
-                                <span class="tooltiptext">Experiência com Git:<br>4/10 - Em Aprendizado</span>
-                            </div>
-                        </div>
-                    </div><!--expertises-box-->
-                    
-                    <div class="expertises-box">
-                        <i class="bi bi-window"></i>
-                        <h3>Desenvolvimento de Softwares</h3>
-
-                        <p class="expertises-box-text">
-                            Assim como na área de Web, também gosto de desenvolver e dar vida às ideias através dos softwares e do ambiente mobile.
-                        </p>
-                        <p class="expertises-box-text hl">Idiomas que falo:</p>
-                        <div class="expertises-box-text">
-                            <div class="tooltip">
-                                <img src="https://img.shields.io/badge/Lua-2C2D72?style=for-the-badge&logo=lua&logoColor=white" alt="Lua">
-                                <span class="tooltiptext">Experiência com Lua:<br>7/10 - Em Aprendizado</span>
-                            </div>
-                            <div class="tooltip">
-                                <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python">
-                                <span class="tooltiptext">Experiência com Python:<br>7/10 - Em Aprendizado</span>
-                            </div>
-                            <div class="tooltip">
-                                <img src="https://img.shields.io/badge/C-00599C?style=for-the-badge&logo=c&logoColor=white" alt="C">
-                                <span class="tooltiptext">Experiência com C:<br>7/10 - Em Aprendizado</span>
-                            </div>
-                        </div>
-                        <p class="expertises-box-text hl">Aprendendo a falar:</p>
-                        <div class="expertises-box-text">
-                            <div class="tooltip">
-                                <img src="https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white" alt="Java">
-                                <span class="tooltiptext">Experiência com Java:<br>6/10 - Em Aprendizado</span>
-                            </div>
-                            <div class="tooltip">
-                                <img src="https://img.shields.io/badge/C%2B%2B-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white" alt="C++">
-                                <span class="tooltiptext">Experiência com C++:<br>Em Aprendizado</span>
-                            </div>
-                            <div class="tooltip">
-                                <img src="https://img.shields.io/badge/Dart-0175C2?style=for-the-badge&logo=dart&logoColor=white" alt="Dart">
-                                <span class="tooltiptext">Experiência com Dart:<br>Em Aprendizado</span>
-                            </div>
-                            <div class="tooltip">
-                                <img src="https://img.shields.io/badge/C%23-512BD4?logo=csharp&logoColor=fff&style=for-the-badge" alt="CSharp">
-                                <span class="tooltiptext">Experiência com C#:<br>Em Aprendizado</span>
-                            </div>
-                        </div>
-                        <p class="expertises-box-text hl">Ferramentas:</p>
-                        <div class="expertises-box-text">
-                            <div class="tooltip">
-                                <img src="https://img.shields.io/badge/Eclipse-2C2255?style=for-the-badge&logo=eclipse&logoColor=white" alt="Eclipse">
-                                <span class="tooltiptext">Experiência com Eclipse:<br>6/10</span>
-                            </div>
-                            <div class="tooltip">
-                                <img src="https://img.shields.io/badge/PyCharm-101010.svg?&style=for-the-badge&logo=PyCharm&logoColor=white" alt="PyCharm">
-                                <span class="tooltiptext">Experiência com PyCharm:<br>7/10</span>
-                            </div>
-                            <div class="tooltip">
-                                <img src="https://img.shields.io/badge/Visual_Studio_Code-0078D4?style=for-the-badge&logo=visual%20studio%20code&logoColor=white" alt="VS Code">
-                                <span class="tooltiptext">Experiência com VS Code:<br>8/10</span>
-                            </div>
-                            <div class="tooltip">
-                                <img src="https://img.shields.io/badge/Solar_2D-F96F29?style=for-the-badge&logo=coronaengine&logoColor=fff" alt="Solar2D">
-                                <span class="tooltiptext">Experiência com Solar2D:<br>7/10</span>
-                            </div>
-                            <div class="tooltip">
-                                <img src="https://img.shields.io/badge/Dev_C%2B%2B-00599C?&style=for-the-badge&logo=cplusplus&logoColor=fff" alt="Dev C++">
-                                <span class="tooltiptext">Experiência com Dev C++: 7/10</span>
-                            </div>
-                            <br>
-                        </div>
-                    </div><!--expertises-box-->
-
-                    <!--
-                    <div class="expertises-box">
-                        <i class="bi bi-cart"></i>
-                        <h3>E-commerce</h3>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam necessitatibus enim quaerat fugiat.</p>
-                    </div><!--expertises-box-->
-                    
-                    <div class="expertises-box">
-                        <i class="bi bi-book"></i>
-                        <h3>Aulas de Programação</h3>
-                        <p class="expertises-box-text">
-                            Ensinar vai além da mera vocação, é um verdadeiro prazer
-                            ver pessoas descobrindo todas as possibilidades que a programação pode proporcionar e em ajudá-los a trilhar nesse novo mundo.
-                        <p class="expertises-box-text hl">Conceitos abordados:</p>
-                        <div class="expertises-box-text">
-                            <img src="https://img.shields.io/badge/Lógica-00A0E0?logo=icloud&logoColor=fff&style=for-the-badge" alt="Lógica">
-                            <img src="https://img.shields.io/badge/Algoritmos-0080C0?logo=diagramsdotnet&logoColor=fff&style=for-the-badge" alt="Algoritmos">
-                            <img src="https://img.shields.io/badge/Sistemas_Numéricos-0055B0?logo=codecademy&logoColor=fff&style=for-the-badge" alt="Sistemas Sistemas Numéricos">
-                            <img src="https://img.shields.io/badge/Portugol-0030A0?logo=minds&logoColor=FFC200&style=for-the-badge" alt="Portugol">
-                        </div>
-                        <p class="expertises-box-text hl">Ferramentas utilizadas:</p>
-                        <div class="expertises-box-text">
-                            <img src="https://img.shields.io/badge/Portugol_WebStudio-0030A0?logo=minds&logoColor=FFC200&style=for-the-badge" alt="Portugol WebStudio">
-
-                        </div>
-                    </div><!--expertises-box-->
-                </div><!--flex-->
-            </div><!--interface-->
-        </section>
-        <section class="about-me" id="about-me">
-            <div class="interface">
-                <div class="flex">
-                    <div class="img-about">
-                        <img src="./src/img/me.png" alt="">
-                    </div><!--img-about-->
-                    
-                    <div class="txt-about">
-                        <h2 class="title">MUITO PRAZER, <span>SOU KEVIN TEIXEIRA.</span><span class="blink">_</span></h2>
-                        <p>Formado em Análise e Desenvolvimento de Sistemas em 2017 pela <a href="https://faex.edu.br" target="_blank">Faculdade de Ciências Sociais Aplicadas de Extrema</a> e pós graduado em Docência em Sistemas de Informação em 2023 pela <a href="https://www.unopar.com.br" target="_blank">Universidade Norte do Paraná</a>, sempre fui fascinado pelo mundo da programação e como ele se inova no meio digital de forma profunda.</p>
-                        <p>Tenho uma caminhada de 1 ano em Front End e de 6 meses em Back End e Desenvolvimento de Softwares.</p>
-                        <p>Fora do mundo da programação, eu amo a criação nas mais diversas áreas. De enredos a música, com foco em desnvolvimento de jogos de computadores e mobile.</p>
-                        <p></p>
-                        <div class="btn-social">
-                            <a href="https://www.linkedin.com/in/kwat1/" target="_blank"><button><i class="bi bi-linkedin"></i></button></a>
-                            <!--<a href="#"><button><i class="bi bi-instagram"></i></button></a>-->
-                            <a href="https://github.com/KevinWilsonAT" target="_blank"><button><i class="bi bi-github"></i></button></a>
-                        </div><!--btn-social-->
-                    </div><!--txt-about-->
-                </div><!--flex-->
-            </div><!--interface-->
-        </section><!--about-->
-        <section class="portfolio" id="portfolio">
-            <div class="interface">
-                <h2 class="title">MEU &nbsp;<span>PORTFOLIO.</span> <span class="blink">_</span></h2>
-                
-                <!-- TABS TO SEPARATE TYPES OF PROJECTS -->
-
-                <!-- Control buttons -->
-                <div class="portfolio-filter" id="portfolio-filter">
-                    <button class="project active" onclick="filterSelection('all')"> Todos os Meus Projetos</button>
-                    <button class="project" onclick="filterSelection('my')"> Projetos Próprios</button>
-                    <button class="project" onclick="filterSelection('course')"> Projetos de Aulas e Cursos</button>
-                    <button class="project" onclick="filterSelection('others')"> Outros Projetos</button>
-                </div>
-
-                <div class="container">
+                            <div class="img-site-top">
+                                <img src="./src/img/me-round.png" alt="">
+                            </div><!--img-site-top-->
+                            <div class="shadow"></div>
+                        </div><!--flex-->
+                    </div><!--interface-->
+                </section><!--site top-->
+            <section class="expertises" id="expertises">
+                <div class="interface">
+                    <h2 class="title">MINHAS <span>ESPECIALIDADES.</span> <span class="blink">_</span></h2>
                     <div class="flex">
-                        <div class="filterDiv my">
-                            <a href="https://kevinteixeira.netlify.app">
-                                <div class="img-port" style="background-image: url(./src/img/projects/projeto-portfolio.jpg);">
-                                    <img src="./src/img/icon.png" alt="Developed by Kevin Teixeira">
-                                    <div class="overlay">Portfolio</div>
+                        <div class="expertises-box">
+                            <i class="bi bi-code-square"></i>
+                            <h3>Desenvolvimento Web</h3>
+                            <p class="expertises-box-text">
+                                Gosto de desenvolver projetos do zero e gosto de dar vida a essas ideias no navegador.
+                            </p>
+                            <p class="expertises-box-text hl">Idiomas que falo:</p>
+                            <div class="expertises-box-text">
+                                <div class="tooltip">
+                                    <img src="https://img.shields.io/badge/HTML5-239120?style=for-the-badge&logo=html5&logoColor=white" alt="HTML">
+                                    <span class="tooltiptext">Experiência com HTML:<br>8/10 - Em Aprendizado</span>
                                 </div>
-                            </a>
-                        </div>
-                        <div class="filterDiv course">
-                            <a href="https://apple-watch-training-page.netlify.app">
-                                <div class="img-port" style="background-image: url(./src/img/projects/projeto-apple-watch.jpg);">
-                                    <img src="https://yt3.googleusercontent.com/MZRL-FhlLZ74DKfep5wpNoRTIdLXzXrVKtzuSZb4FG63WUnq0ghU_8hcs6YUdNG-rkPz2TBW=s176-c-k-c0x00ffffff-no-rj" alt="Hashtag Treinamentos">
-                                    <div class="overlay">Página Apple -<br>Apple Watch</div>
+                                <div class="tooltip">
+                                    <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" alt="CSS3">
+                                    <span class="tooltiptext">Experiência com CSS3:<br>8/10 - Em Aprendizado</span>
                                 </div>
-                            </a>
-                        </div>
-                        <div class="filterDiv course">
+                                <div class="tooltip">
+                                    <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" alt="JavaScript">
+                                    <span class="tooltiptext">Experiência com JavaScript:<br>7/10 - Em Aprendizado</span>
+                                </div>
+                            </div>
+                            <p class="expertises-box-text hl">Aprendendo a falar:</p>
+                            <div class="expertises-box-text">
+                                <div class="tooltip">
+                                    <img src="https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white" alt="">
+                                    <span class="tooltiptext">Experiência com TypeScript:<br>Em Aprendizado</span>
+                                </div>
+                                <div class="tooltip">
+                                    <img src="https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php&logoColor=white" alt="PHP">
+                                    <span class="tooltiptext">Experiência com PHP:<br> 6/10 - Em Aprendizado</span>
+                                </div>
+                                <div class="tooltip">
+                                    <img src="https://img.shields.io/badge/SQL-005C84?style=for-the-badge&logo=mysql&logoColor=white" alt="MySQL">
+                                    <span class="tooltiptext">Experiência com MySQL:<br> 6/10 - Em Aprendizado</span>
+                                </div>
+                            </div>
+                            <p class="expertises-box-text hl">Aprendendo os frameworks:</p>
+                            <div class="expertises-box-text">
+
+                                <div class="tooltip">
+                                    <img src="https://img.shields.io/badge/Tailwind%20CSS-06B6D4?logo=tailwindcss&logoColor=fff&style=for-the-badge" alt="Tailwind">
+                                    <span class="tooltiptext">Experiência com Tailwind:<br>Em Aprendizado</span>
+                                </div>
+                                <div class="tooltip">
+                                    <img src="https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white" alt="Node.js">
+                                    <span class="tooltiptext">Experiência com Node.js:<br>Em Aprendizado</span>
+                                </div>
+                                <div class="tooltip">
+                                    <img src="https://img.shields.io/badge/Angular-DD0031?style=for-the-badge&logo=angular&logoColor=white" alt="Angular">
+                                    <span class="tooltiptext">Experiência com Angular:<br>Em Aprendizado</span>
+                                </div>
+                                <div class="tooltip">
+                                    <img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" alt="React">
+                                    <span class="tooltiptext">Experiência com React:<br>Em Aprendizado</span>
+                                </div>
+                                <div class="tooltip">
+                                    <img src="https://img.shields.io/badge/Nest.js-171A1C?style=for-the-badge&logo=nestjs&logoColor=EB2845" alt="Nest.js">
+                                    <span class="tooltiptext">Experiência com Nest.js:<br>Em Aprendizado</span>
+                                </div>
+                            </div>
+                            <p class="expertises-box-text hl">Ferramentas:</p>
+                            <div class="expertises-box-text">
+                                <div class="tooltip">
+                                    <img src="https://img.shields.io/badge/WordPress-006E93?style=for-the-badge&logo=wordpress&logoColor=white" alt="WordPress">
+                                    <span class="tooltiptext">Experiência com Wordpress:<br>5/10 - Em Aprendizado</span>
+                                </div>
+                                <div class="tooltip">
+                                    <img src="http://img.shields.io/badge/-PHPStorm-181717?style=for-the-badge&logo=phpstorm&logoColor=white" alt="PHPStorm">
+                                    <span class="tooltiptext">Experiência com PHPStorm:<br>7/10</span>
+                                </div>
+                                <div class="tooltip">
+                                    <img src="https://img.shields.io/badge/GitHub-101010?style=for-the-badge&logo=github&logoColor=white" alt="GitHub">
+                                    <span class="tooltiptext">Experiência com Github:<br>7/10 - Em Aprendizado</span>
+                                </div>
+                                <div class="tooltip">
+                                    <img src="https://img.shields.io/badge/Visual_Studio_Code-0078D4?style=for-the-badge&logo=visual%20studio%20code&logoColor=white" alt="VS Code">
+                                    <span class="tooltiptext">Experiência com VS Code:<br>8/10</span>
+                                </div>
+                                <div class="tooltip">
+                                    <img src="https://img.shields.io/badge/GIT-E44C30?style=for-the-badge&logo=git&logoColor=white" alt="Git">
+                                    <span class="tooltiptext">Experiência com Git:<br>4/10 - Em Aprendizado</span>
+                                </div>
+                            </div>
+                        </div><!--expertises-box-->
+                        
+                        <div class="expertises-box">
+                            <i class="bi bi-window"></i>
+                            <h3>Desenvolvimento de Softwares</h3>
+
+                            <p class="expertises-box-text">
+                                Assim como na área de Web, também gosto de desenvolver e dar vida às ideias através dos softwares e do ambiente mobile.
+                            </p>
+                            <p class="expertises-box-text hl">Idiomas que falo:</p>
+                            <div class="expertises-box-text">
+                                <div class="tooltip">
+                                    <img src="https://img.shields.io/badge/Lua-2C2D72?style=for-the-badge&logo=lua&logoColor=white" alt="Lua">
+                                    <span class="tooltiptext">Experiência com Lua:<br>7/10 - Em Aprendizado</span>
+                                </div>
+                                <div class="tooltip">
+                                    <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python">
+                                    <span class="tooltiptext">Experiência com Python:<br>7/10 - Em Aprendizado</span>
+                                </div>
+                                <div class="tooltip">
+                                    <img src="https://img.shields.io/badge/C-00599C?style=for-the-badge&logo=c&logoColor=white" alt="C">
+                                    <span class="tooltiptext">Experiência com C:<br>7/10 - Em Aprendizado</span>
+                                </div>
+                            </div>
+                            <p class="expertises-box-text hl">Aprendendo a falar:</p>
+                            <div class="expertises-box-text">
+                                <div class="tooltip">
+                                    <img src="https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white" alt="Java">
+                                    <span class="tooltiptext">Experiência com Java:<br>6/10 - Em Aprendizado</span>
+                                </div>
+                                <div class="tooltip">
+                                    <img src="https://img.shields.io/badge/C%2B%2B-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white" alt="C++">
+                                    <span class="tooltiptext">Experiência com C++:<br>Em Aprendizado</span>
+                                </div>
+                                <div class="tooltip">
+                                    <img src="https://img.shields.io/badge/Dart-0175C2?style=for-the-badge&logo=dart&logoColor=white" alt="Dart">
+                                    <span class="tooltiptext">Experiência com Dart:<br>Em Aprendizado</span>
+                                </div>
+                                <div class="tooltip">
+                                    <img src="https://img.shields.io/badge/C%23-512BD4?logo=csharp&logoColor=fff&style=for-the-badge" alt="CSharp">
+                                    <span class="tooltiptext">Experiência com C#:<br>Em Aprendizado</span>
+                                </div>
+                            </div>
+                            <p class="expertises-box-text hl">Ferramentas:</p>
+                            <div class="expertises-box-text">
+                                <div class="tooltip">
+                                    <img src="https://img.shields.io/badge/Eclipse-2C2255?style=for-the-badge&logo=eclipse&logoColor=white" alt="Eclipse">
+                                    <span class="tooltiptext">Experiência com Eclipse:<br>6/10</span>
+                                </div>
+                                <div class="tooltip">
+                                    <img src="https://img.shields.io/badge/NetBeans-1B6AC6?logo=apachenetbeanside&logoColor=fff&style=for-the-badge" alt="NetBeans">
+                                    <span class="tooltiptext">Experiência com NetBeans:<br>Em Aprendizado</span>
+                                </div>
+                                <div class="tooltip">
+                                    <img src="https://img.shields.io/badge/PyCharm-101010.svg?&style=for-the-badge&logo=PyCharm&logoColor=white" alt="PyCharm">
+                                    <span class="tooltiptext">Experiência com PyCharm:<br>7/10</span>
+                                </div>
+                                <div class="tooltip">
+                                    <img src="https://img.shields.io/badge/Visual_Studio_Code-0078D4?style=for-the-badge&logo=visual%20studio%20code&logoColor=white" alt="VS Code">
+                                    <span class="tooltiptext">Experiência com VS Code:<br>8/10</span>
+                                </div>
+                                <div class="tooltip">
+                                    <img src="https://img.shields.io/badge/Solar_2D-F96F29?style=for-the-badge&logo=coronaengine&logoColor=fff" alt="Solar2D">
+                                    <span class="tooltiptext">Experiência com Solar2D:<br>7/10</span>
+                                </div>
+                                <div class="tooltip">
+                                    <img src="https://img.shields.io/badge/Dev_C%2B%2B-00599C?&style=for-the-badge&logo=cplusplus&logoColor=fff" alt="Dev C++">
+                                    <span class="tooltiptext">Experiência com Dev C++: 7/10</span>
+                                </div>
+                                <br>
+                            </div>
+                        </div><!--expertises-box-->
+
+                        <!--
+                        <div class="expertises-box">
+                            <i class="bi bi-cart"></i>
+                            <h3>E-commerce</h3>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam necessitatibus enim quaerat fugiat.</p>
+                        </div><!--expertises-box-->
+                        
+                        <div class="expertises-box">
+                            <i class="bi bi-book"></i>
+                            <h3>Aulas de Programação</h3>
+                            <p class="expertises-box-text">
+                                Ensinar vai além da mera vocação, é um verdadeiro prazer
+                                ver pessoas descobrindo todas as possibilidades que a programação pode proporcionar e em ajudá-los a trilhar nesse novo mundo.
+                                <p class="expertises-box-text hl">Conceitos abordados:</p>
+                            <div class="expertises-box-text">
+                                <img src="https://img.shields.io/badge/Lógica-00A0E0?logo=icloud&logoColor=fff&style=for-the-badge" alt="Lógica">
+                                <img src="https://img.shields.io/badge/Algoritmos-0080C0?logo=diagramsdotnet&logoColor=fff&style=for-the-badge" alt="Algoritmos">
+                                <img src="https://img.shields.io/badge/Sistemas_Numéricos-0055B0?logo=codecademy&logoColor=fff&style=for-the-badge" alt="Sistemas Sistemas Numéricos">
+                                <img src="https://img.shields.io/badge/Portugol-0030A0?logo=minds&logoColor=FFC200&style=for-the-badge" alt="Portugol">
+                            </div>
+                            <p class="expertises-box-text hl">Ferramentas utilizadas:</p>
+                            <div class="expertises-box-text">
+                                <img src="https://img.shields.io/badge/Portugol_WebStudio-0030A0?logo=minds&logoColor=FFC200&style=for-the-badge" alt="Portugol WebStudio">
+
+                            </div>
+                        </div><!--expertises-box-->
+                    </div><!--flex-->
+                </div><!--interface-->
+            </section>
+        </div>
+        <div class="parallax-reverse">
+            <section class="about-me" id="about-me">
+                <div class="interface">
+                    <div class="flex">
+                        <div class="img-about">
+                            <img src="./src/img/me.png" alt="">
+                        </div><!--img-about-->
+                        
+                        <div class="txt-about">
+                            <h2 class="title">MUITO PRAZER, <span>SOU KEVIN TEIXEIRA.</span><span class="blink">_</span></h2>
+                            <p>Formado em Análise e Desenvolvimento de Sistemas em 2017 pela <a href="https://faex.edu.br" target="_blank">Faculdade de Ciências Sociais Aplicadas de Extrema</a>, pós graduado em Docência em Sistemas de Informação em 2023 pela <a href="https://www.unopar.com.br" target="_blank">Universidade Norte do Paraná</a> e cursando pós graduação em Ciências de Dados e Inteligência Artificial pelo <a href="https://www.uninter.com">Centro Universitário Internacional</a> , sempre fui fascinado pelo mundo da programação e como ele se inova no meio digital de forma profunda.</p>
+                            <p>Tenho uma caminhada de 1 ano em Front End e de 6 meses em Back End e Desenvolvimento de Softwares.</p>
+                            <p>Fora do mundo da programação, eu amo a criação nas mais diversas áreas. De enredos a música, com foco em desenvolvimento de jogos de computadores e mobile.</p>
+                            <p></p>
+                            <div class="btn-social">
+                                <a href="https://www.linkedin.com/in/kwat1/" target="_blank"><button><i class="bi bi-linkedin"></i></button></a>
+                                <!--<a href="#"><button><i class="bi bi-instagram"></i></button></a>-->
+                                <a href="https://github.com/KevinWilsonAT" target="_blank"><button><i class="bi bi-github"></i></button></a>
+                            </div><!--btn-social-->
+                        </div><!--txt-about-->
+                    </div><!--flex-->
+                </div><!--interface-->
+            </section><!--about-->
+            <section class="portfolio" id="portfolio">
+                <div class="interface">
+                    <h2 class="title">MEU &nbsp;<span>PORTFOLIO.</span> <span class="blink">_</span></h2>
+                    
+                    <!-- TABS TO SEPARATE TYPES OF PROJECTS -->
+
+                    <!-- Control buttons -->
+                    <div class="portfolio-filter" id="portfolio-filter">
+                        <button class="project active" onclick="filterSelection('all')"> Todos os Meus Projetos</button>
+                        <button class="project" onclick="filterSelection('my')"> Projetos Próprios</button>
+                        <button class="project" onclick="filterSelection('course')"> Projetos de Aulas e Cursos</button>
+                        <button class="project" onclick="filterSelection('others')"> Outros Projetos</button>
+                    </div>
+                    
+                    <div class="container">
+                        <div class="flex">
+                            <div class="filterDiv my">
+                                <a href="https://kevinteixeira.netlify.app">
+                                    <div class="img-port" style="background-image: url(./src/img/projects/projeto-portfolio.jpg);">
+                                        <img src="./src/img/icon.png" alt="Developed by Kevin Teixeira">
+                                        <div class="overlay">Portfolio</div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="filterDiv course">
+                                <a href="https://apple-watch-training-page.netlify.app">
+                                    <div class="img-port" style="background-image: url(./src/img/projects/projeto-apple-watch.jpg);">
+                                        <img src="https://yt3.googleusercontent.com/MZRL-FhlLZ74DKfep5wpNoRTIdLXzXrVKtzuSZb4FG63WUnq0ghU_8hcs6YUdNG-rkPz2TBW=s176-c-k-c0x00ffffff-no-rj" alt="Hashtag Treinamentos">
+                                        <div class="overlay">Página Apple -<br>Apple Watch</div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="filterDiv course">
                                 <a href="https://audiobook-expansible.netlify.app">
                                     <div class="img-port" style="background-image: url(./src/img/projects/projeto-audiobook.jpg);">
                                         <img src="https://yt3.googleusercontent.com/MZRL-FhlLZ74DKfep5wpNoRTIdLXzXrVKtzuSZb4FG63WUnq0ghU_8hcs6YUdNG-rkPz2TBW=s176-c-k-c0x00ffffff-no-rj" alt="Hashtag Treinamentos">
                                         <div class="overlay">Aplicação Web Javascript - <br>Audio Book</div>
                                     </div>
                                 </a>
-                        </div>
-                    </div><!--flex 1st row-->
-                    <div class="flex">
-                        <div class="filterDiv course">
+                            </div>
+                        </div><!--flex 1st row-->
+                        <div class="flex">
+                            <div class="filterDiv course">
                                 <a href="https://landing-page-gta.netlify.app">
                                     <div class="img-port" style="background-image: url(./src/img/projects/projeto-landing-page-gta.jpg);">
                                         <img src="https://yt3.googleusercontent.com/6HuNt0LCQUWimLPC2NKYQnYKbCyKEObx3cNCfDid6InE43A_7Poxn8sb7ajyeRiqDsDMJMZlnw=s176-c-k-c0x00ffffff-no-rj" alt="Dev Em Dobro">
-                                    <div class="overlay">Landing Page - GTA</div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="filterDiv course">
-                            <a href="https://landingpage-theboys.netlify.app">
-                                <div class="img-port" style="background-image: url(./src/img/projects/projeto-landing-page-theboys.jpg);">
-                                    <img src="https://yt3.googleusercontent.com/11MqHcifWU5HsKKr6Dx92Ez7lciq1eV2mo1TGJy60O9Z2u9tdk7CuAyVXffQ1xBpFNyqaiqMuw=s176-c-k-c0x00ffffff-no-rj" alt="Dev Envolvente">
-                                    <div class="overlay">Landing Page - The Boys</div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="filterDiv course">
-                            <a href="https://landingpage-responsivo-foodpeek.netlify.app">
-                                <div class="img-port" style="background-image: url(./src/img/projects/projeto-pagina-lanchonete-foodpeek.jpg);">
-                                    <img src="https://yt3.googleusercontent.com/XpNcj6L4-wiWgWLShZEuzKtt3lynQTu-mUahWmoKda9u5jS6cXdA9LRjnfKz_DYWqTI1w_LgDg=s176-c-k-c0x00ffffff-no-rj" alt="Rodrigo Mori">
-                                    <div class="overlay">Página de Lanchonete com Menu Responsivo</div>
-                                </div>
-                            </a>
-                        </div>
-                    </div><!--flex 2nd row-->
+                                        <div class="overlay">Landing Page - GTA</div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="filterDiv course">
+                                <a href="https://landingpage-theboys.netlify.app">
+                                    <div class="img-port" style="background-image: url(./src/img/projects/projeto-landing-page-theboys.jpg);">
+                                        <img src="https://yt3.googleusercontent.com/11MqHcifWU5HsKKr6Dx92Ez7lciq1eV2mo1TGJy60O9Z2u9tdk7CuAyVXffQ1xBpFNyqaiqMuw=s176-c-k-c0x00ffffff-no-rj" alt="Dev Envolvente">
+                                        <div class="overlay">Landing Page - The Boys</div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="filterDiv course">
+                                <a href="https://landingpage-responsivo-foodpeek.netlify.app">
+                                    <div class="img-port" style="background-image: url(./src/img/projects/projeto-pagina-lanchonete-foodpeek.jpg);">
+                                        <img src="https://yt3.googleusercontent.com/XpNcj6L4-wiWgWLShZEuzKtt3lynQTu-mUahWmoKda9u5jS6cXdA9LRjnfKz_DYWqTI1w_LgDg=s176-c-k-c0x00ffffff-no-rj" alt="Rodrigo Mori">
+                                        <div class="overlay">Página de Lanchonete com Menu Responsivo</div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div><!--flex 2nd row-->
+                        <div class="flex">
+                            <div class="filterDiv course">
+                                <a href="https://landingpage-star-bucks.netlify.app/">
+                                    <div class="img-port" style="background-image: url(./src/img/projects/projeto-pagina-starbucks.jpg);">
+                                        <img src="https://yt3.googleusercontent.com/XpNcj6L4-wiWgWLShZEuzKtt3lynQTu-mUahWmoKda9u5jS6cXdA9LRjnfKz_DYWqTI1w_LgDg=s176-c-k-c0x00ffffff-no-rj" alt="Rodrigo Mori">
+                                        <div class="overlay">Página - Starbucks</div>
+                                    </div>
+                                </a>
+                            </div>    
+                            <div class="filterDiv course">
+                                <a href="https://simple-js-to-do-list.netlify.app/">
+                                    <div class="img-port" style="background-image: url(./src/img/projects/projeto-web-app-todo-list.jpg);">
+                                        <img src="https://yt3.googleusercontent.com/XpNcj6L4-wiWgWLShZEuzKtt3lynQTu-mUahWmoKda9u5jS6cXdA9LRjnfKz_DYWqTI1w_LgDg=s176-c-k-c0x00ffffff-no-rj" alt="Rodrigo Mori">
+                                        <div class="overlay">Aplicação Web - To Do List</div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="filterDiv others">
+                                <a href="#">
+                                    <div class="img-port">        
+                                        <video class="img-port-video" src="" type="video/mp4" autoplay="true" loop="true"></video>
+                                        <div class="overlay">Em Breve</div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div><!--flex 3rd row-->
+                    </div><!--filter container-->
+                </div><!--interface-->
+            </section><!--portfolio-->
+        </main>
+        <footer>
+            <div class="interface">
+                <div class="line-footer">
                     <div class="flex">
-                        <div class="filterDiv course">
-                            <a href="https://landingpage-star-bucks.netlify.app/">
-                                <div class="img-port" style="background-image: url(./src/img/projects/projeto-pagina-starbucks.jpg);">
-                                    <img src="https://yt3.googleusercontent.com/XpNcj6L4-wiWgWLShZEuzKtt3lynQTu-mUahWmoKda9u5jS6cXdA9LRjnfKz_DYWqTI1w_LgDg=s176-c-k-c0x00ffffff-no-rj" alt="Rodrigo Mori">
-                                    <div class="overlay">Página - Starbucks</div>
-                                </div>
-                            </a>
-                        </div>    
-                        <div class="filterDiv course">
-                            <a href="https://simple-js-to-do-list.netlify.app/">
-                                <div class="img-port" style="background-image: url(./src/img/projects/projeto-web-app-todo-list.jpg);">
-                                    <img src="https://yt3.googleusercontent.com/XpNcj6L4-wiWgWLShZEuzKtt3lynQTu-mUahWmoKda9u5jS6cXdA9LRjnfKz_DYWqTI1w_LgDg=s176-c-k-c0x00ffffff-no-rj" alt="Rodrigo Mori">
-                                    <div class="overlay">Aplicação Web - To Do List</div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="filterDiv others">
-                            <a href="#">
-                                <div class="img-port">        
-                                    <video class="img-port-video" src="" type="video/mp4" autoplay="true" loop="true"></video>
-                                    <div class="overlay">Em Breve</div>
-                                </div>
-                            </a>
-                        </div>
-                    </div><!--flex 3rd row-->
-                </div><!--filter container-->
+                        <div class="logo-footer">
+                            <a href="" onclick="topFunction()"><img class="logo" src="./src/img/logo.png" alt="Logo Tech Eira"></a>
+                        </div><!--logo-footer-->
+                        <div class="btn-social">
+                            <a href="https://www.linkedin.com/in/kwat1/" target="_blank"><button><i class="bi bi-linkedin"></i></button></a>
+                            <!--<a href="#"><button><i class="bi bi-instagram"></i></button></a>-->
+                            <a href="https://github.com/KevinWilsonAT" target="_blank"><button><i class="bi bi-github"></i></button></a>
+                        </div><!--btn-social-->
+                    </div><!--flex-->
+                </div><!--line-footer-->
+                <div class="line-footer border">
+                    <p><i class="bi bi-envelope-fill"></i><a href="mailto:kevin.dkc.wat@outlook.com">kevin.dkc.wat@outlook.com</a></p>
+                </div><!--line-footer-->
             </div><!--interface-->
-        </section><!--portfolio-->
-    </main>
-    <footer>
-        <div class="interface">
-            <div class="line-footer">
-                <div class="flex">
-                    <div class="logo-footer">
-                        <a href="" onclick="topFunction()"><img class="logo" src="./src/img/logo.png" alt="Logo Tech Eira"></a>
-                    </div><!--logo-footer-->
-                    <div class="btn-social">
-                        <a href="https://www.linkedin.com/in/kwat1/" target="_blank"><button><i class="bi bi-linkedin"></i></button></a>
-                        <!--<a href="#"><button><i class="bi bi-instagram"></i></button></a>-->
-                        <a href="https://github.com/KevinWilsonAT" target="_blank"><button><i class="bi bi-github"></i></button></a>
-                    </div><!--btn-social-->
-                </div><!--flex-->
-            </div><!--line-footer-->
-            <div class="line-footer border">
-                <p><i class="bi bi-envelope-fill"></i><a href="mailto:kevin.dkc.wat@outlook.com">kevin.dkc.wat@outlook.com</a></p>
-            </div><!--line-footer-->
-        </div><!--interface-->
-    </footer>
+        </footer>
+    </div>
     <script src="./src/script/script.js" defer></script>
     <script src="./src/script/portfolio-filter.js"></script>
 </body>

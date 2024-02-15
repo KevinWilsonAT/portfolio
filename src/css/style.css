@@ -13,9 +13,27 @@
 }
 
 body{
-    background-color: #000; /* #5f5f5f; */
-    font-family: 'Poppins', sans-serif;
     height: 100vh;
+    width: 100%;
+    font-family: 'Poppins', sans-serif;
+}
+
+.parallax{
+    background-image: linear-gradient(-60deg, #000 53%, #202020 100%);
+}
+
+.parallax-reverse{
+    background-image: linear-gradient(250deg, #000 53%, #202020 100%);
+}
+
+.background{
+    position: absolute;
+    height: 100vh;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
 }
 
 .interface{
@@ -96,7 +114,7 @@ button:hover{
         color: #7ED957;
     }
     100%{
-        color: #000;
+        color: #00000000;
     }
 }
 
@@ -479,7 +497,6 @@ section.about-me .flex{
 
 footer{
     padding: 40px 4%;
-    box-shadow: 0 0 40px 10px #70707025;
 }
 
 footer .logo-footer img{

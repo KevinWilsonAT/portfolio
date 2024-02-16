@@ -67,7 +67,7 @@ section.portfolio .flex{
     box-shadow: 0 0 8px #7ED957;
 }
 
-.img-port img{
+.img-port .author{
     z-index: 99;
     position: relative;
     top: 90%;
@@ -77,7 +77,7 @@ section.portfolio .flex{
     transition: all 1s;
 }
 
-.img-port img:hover{
+.img-port .author:hover{
     transform: scale(3);
 }
 

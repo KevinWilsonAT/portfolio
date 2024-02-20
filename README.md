@@ -6,6 +6,6 @@
 
 ## Linguagens do Repositório
 
-<img alt="Static Badge" src="https://img.shields.io/badge/--_?style=for-the-badge&label=HTML&labelColor=#e34c26&color=%2300000000"><!-- -->
-<img alt="Static Badge" src="https://img.shields.io/badge/--_?style=for-the-badge&label=HTML&labelColor=#e34c26&color=%2300000000"><!-- -->
-<img alt="Static Badge" src="https://img.shields.io/badge/--_?style=for-the-badge&label=HTML&labelColor=#e34c26&color=%2300000000"><!-- -->
+<img alt="Static Badge" src="https://img.shields.io/badge/--_?style=for-the-badge&label=HTML&labelColor=%23e34c26&color=%2300000000"><!-- -->
+<img alt="Static Badge" src="https://img.shields.io/badge/--_?style=for-the-badge&label=CSS&labelColor=%23563D7C&color=%2300000000"><!-- -->
+<img alt="Static Badge" src="https://img.shields.io/badge/--_?style=for-the-badge&label=JavaScript&labelColor=%23F1E05A&color=%2300000000"><!-- -->
